@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #00ffff 0%, #ccff66 100%);
+            background-size: 100% 100%;
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Accuracy: {{ accuracy }}</p>
+    <p>Precision: {{ precision }}</p>
+    <p>Recall: {{ recall }}</p>
+    <p>F1 Score: {{ f1 }}</p>
+    <p>Confusion Matrix:</p>
+    <p>{{ conf_matrix }}</p>
+    <p>The predicted disease is: {{ data[0] }}</p>
+    <p>The probability is: {{ data[1] }}%</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>
